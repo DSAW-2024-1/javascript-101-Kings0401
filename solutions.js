@@ -18,12 +18,15 @@ function factorial(n) {
   else{
     if (n === 0 || n === 1)
       return n===1;
-    for (var i = n - 1; i >= 1; i--) {
-      n *= i;
+    else{
+      for (var i = n - 1; i >= 1; i--) {
+        n *= i;
+      }
+      return n;
     }
-    return n;
   }
 }
+
 
 // Find the Largest Number
 function findLargest(arr) {
