@@ -12,12 +12,17 @@ function sum(a, b) {
 // Factorial of a Number
 function factorial(n) {
   // Add your code here
-  if (numero === 0 || numero === 1)
-    return 1;
-  for (var i = numero - 1; i >= 1; i--) {
-    numero *= i;
+  if(typeof a !== "number" || typeof b !== "number"){
+    console.log("Los datos de entrada no son adecuados");
+    }
+  else{
+    if (n === 0 || n === 1)
+      return 1;
+    for (var i = n - 1; i >= 1; i--) {
+      n *= i;
+    }
+    return n;
   }
-  return numero;
 }
 
 // Find the Largest Number
