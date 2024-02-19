@@ -60,15 +60,15 @@ function countVowels(str) {
 // Check if a Number is Prime
 function isPrime(n) {
   // Add your code here
-  if (typeof num !== "number") {
+  if (typeof n !== "number") {
     console.log("Los datos de entrada no son adecuados");
     return;
   }
 
-  if (num < 2) return false;
+  if (n < 2) return false;
 
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-    if (num % i === 0) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
   }
 
   return true;
